@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        isScrolled ? 'bg-white shadow-lg' : 'bg-white'
       }`}
       data-testid="header-main"
     >
@@ -106,7 +106,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-background/95 backdrop-blur-md border-t border-border" data-testid="nav-mobile">
+          <div className="md:hidden bg-white border-t border-border" data-testid="nav-mobile">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button 
                 onClick={() => scrollToSection('home')}
