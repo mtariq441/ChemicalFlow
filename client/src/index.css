@@ -1,84 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* LIGHT MODE */
+/* BRAND COLORS - AF Chemicals Premium Color Palette */
 :root {
-  --button-outline: rgba(0,0,0, .10);
-  --badge-outline: rgba(0,0,0, .05);
-
-  /* Automatic computation of border around primary / danger buttons */
-  --opaque-button-border-intensity: -8; /* In terms of percentages */
-
-  /* Backgrounds applied on top of other backgrounds when hovered/active */
-  --elevate-1: rgba(0,0,0, .03);
-  --elevate-2: rgba(0,0,0, .08);
-
-  --background: 0 0% 100%;
-
-  --foreground: 220 10% 15%;
-
-  --border: 210 8% 86%;
-
-  --card: 0 0% 98%;
-
-  --card-foreground: 220 10% 15%;
-
-  --card-border: 210 8% 92%;
-
-  --sidebar: 210 6% 94%;
-
-  --sidebar-foreground: 220 10% 15%;
-
-  --sidebar-border: 210 8% 88%;
-
-  --sidebar-primary: 220 25% 25%;
-
+  /* Brand Primary Colors */
+  --afc-primary: 218 38% 37%; /* #395989 */
+  --asl-secondary: 201 85% 52%; /* #1999E0 */
+  --bathco-neutral: 220 21% 34%; /* #44546A */
+  --accent-red: 12 65% 47%; /* #C44427 */
+  --accent-yellow: 21 71% 57%; /* #E2753B */
+  --accent-purple: 311 48% 29%; /* #712A64 */
+  
+  /* Enhanced Brand Application */
+  --industrial-blue: var(--afc-primary);
+  --sustainability-green: var(--asl-secondary);
+  --premium-dark: var(--bathco-neutral);
+  --cta-red: var(--accent-red);
+  --highlight-orange: var(--accent-yellow);
+  --elegant-purple: var(--accent-purple);
+  
+  /* System Colors - Premium Industrial Theme */
+  --button-outline: rgba(57, 89, 137, 0.15);
+  --badge-outline: rgba(57, 89, 137, 0.08);
+  --opaque-button-border-intensity: -6;
+  --elevate-1: rgba(57, 89, 137, 0.04);
+  --elevate-2: rgba(57, 89, 137, 0.08);
+  
+  /* Core Theme Colors */
+  --background: 0 0% 98%;
+  --foreground: var(--premium-dark);
+  --border: 218 15% 88%;
+  --card: 0 0% 100%;
+  --card-foreground: var(--premium-dark);
+  --card-border: 218 15% 92%;
+  
+  /* Navigation & UI */
+  --sidebar: 218 25% 95%;
+  --sidebar-foreground: var(--premium-dark);
+  --sidebar-border: 218 15% 85%;
+  --sidebar-primary: var(--afc-primary);
   --sidebar-primary-foreground: 0 0% 98%;
-
-  --sidebar-accent: 210 8% 86%;
-
-  --sidebar-accent-foreground: 220 10% 20%;
-
-  --sidebar-ring: 220 25% 25%;
-
-  --popover: 210 6% 96%;
-
-  --popover-foreground: 220 10% 15%;
-
-  --popover-border: 210 8% 90%;
-
-  --primary: 220 25% 25%;
-
+  --sidebar-accent: 218 20% 90%;
+  --sidebar-accent-foreground: var(--premium-dark);
+  --sidebar-ring: var(--afc-primary);
+  
+  /* Interactive Elements */
+  --popover: 0 0% 100%;
+  --popover-foreground: var(--premium-dark);
+  --popover-border: 218 15% 90%;
+  --primary: var(--afc-primary);
   --primary-foreground: 0 0% 98%;
-
-  --secondary: 210 8% 88%;
-
-  --secondary-foreground: 220 10% 20%;
-
-  --muted: 210 8% 92%;
-
-  --muted-foreground: 220 8% 45%;
-
-  --accent: 210 12% 90%;
-
-  --accent-foreground: 220 10% 25%;
-
-  --destructive: 0 84% 45%;
-
+  --secondary: 218 15% 92%;
+  --secondary-foreground: var(--premium-dark);
+  --muted: 218 10% 94%;
+  --muted-foreground: 220 8% 55%;
+  --accent: var(--asl-secondary);
+  --accent-foreground: 0 0% 98%;
+  --destructive: var(--accent-red);
   --destructive-foreground: 0 0% 98%;
 
-  --input: 210 8% 76%;
-  --ring: 220 25% 25%;
-  --chart-1: 220 25% 25%;
-  --chart-2: 142 69% 42%;
-  --chart-3: 25 95% 47%;
-  --chart-4: 210 8% 46%;
-  --chart-5: 260 15% 35%;
+  --input: 218 15% 88%;
+  --ring: var(--afc-primary);
+  --chart-1: var(--afc-primary);
+  --chart-2: var(--asl-secondary);
+  --chart-3: var(--accent-yellow);
+  --chart-4: var(--accent-red);
+  --chart-5: var(--accent-purple);
 
-  --font-sans: Open Sans, sans-serif;
-  --font-serif: Georgia, serif;
-  --font-mono: Menlo, monospace;
+  --font-sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, monospace;
   --radius: .5rem; /* 8px */
   --shadow-2xs: 0px 2px 0px 0px hsl(220 10% 15% / 0.02);
   --shadow-xs: 0px 2px 0px 0px hsl(220 10% 15% / 0.03);
@@ -89,7 +83,19 @@
   --shadow-xl: 0px 2px 0px 0px hsl(220 10% 15% / 0.10), 0px 8px 10px -1px hsl(220 10% 15% / 0.15);
   --shadow-2xl: 0px 2px 0px 0px hsl(220 10% 15% / 0.12);
   --tracking-normal: 0em;
+  --tracking-tight: -0.025em;
+  --tracking-wide: 0.025em;
   --spacing: 0.25rem;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
 
   /* Automatically computed borders - intensity can be controlled by the user by the --opaque-button-border-intensity setting */
 
@@ -123,76 +129,53 @@
 }
 
 .dark {
-  --button-outline: rgba(255,255,255, .10);
-  --badge-outline: rgba(255,255,255, .05);
-
-  --opaque-button-border-intensity: 9;  /* In terms of percentages */
-
-  /* Backgrounds applied on top of other backgrounds when hovered/active */
-  --elevate-1: rgba(255,255,255, .04);
-  --elevate-2: rgba(255,255,255, .09);
-
-  --background: 220 15% 8%;
-
-  --foreground: 0 0% 92%;
-
-  --border: 220 10% 18%;
-
-  --card: 220 12% 10%;
-
-  --card-foreground: 0 0% 92%;
-
-  --card-border: 220 10% 20%;
-
-  --sidebar: 220 15% 12%;
-
-  --sidebar-foreground: 0 0% 92%;
-
-  --sidebar-border: 220 10% 22%;
-
-  --sidebar-primary: 220 25% 25%;
-
+  /* Dark Mode - Premium Industrial */
+  --button-outline: rgba(255,255,255, 0.12);
+  --badge-outline: rgba(255,255,255, 0.08);
+  --opaque-button-border-intensity: 8;
+  --elevate-1: rgba(255,255,255, 0.05);
+  --elevate-2: rgba(255,255,255, 0.10);
+  
+  /* Dark Theme Base */
+  --background: var(--premium-dark);
+  --foreground: 0 0% 95%;
+  --border: 220 15% 25%;
+  --card: 220 18% 30%;
+  --card-foreground: 0 0% 95%;
+  --card-border: 220 15% 35%;
+  
+  /* Dark Navigation */
+  --sidebar: 220 20% 25%;
+  --sidebar-foreground: 0 0% 95%;
+  --sidebar-border: 220 15% 35%;
+  --sidebar-primary: var(--afc-primary);
   --sidebar-primary-foreground: 0 0% 98%;
-
-  --sidebar-accent: 220 10% 25%;
-
-  --sidebar-accent-foreground: 0 0% 85%;
-
-  --sidebar-ring: 220 25% 35%;
-
-  --popover: 220 12% 14%;
-
-  --popover-foreground: 0 0% 92%;
-
-  --popover-border: 220 10% 24%;
-
-  --primary: 220 25% 25%;
-
+  --sidebar-accent: 220 15% 35%;
+  --sidebar-accent-foreground: 0 0% 90%;
+  --sidebar-ring: var(--asl-secondary);
+  
+  /* Dark Interactive */
+  --popover: 220 18% 28%;
+  --popover-foreground: 0 0% 95%;
+  --popover-border: 220 15% 40%;
+  --primary: var(--afc-primary);
   --primary-foreground: 0 0% 98%;
-
-  --secondary: 220 10% 22%;
-
-  --secondary-foreground: 0 0% 85%;
-
-  --muted: 220 10% 18%;
-
-  --muted-foreground: 220 8% 65%;
-
-  --accent: 220 12% 20%;
-
-  --accent-foreground: 0 0% 85%;
-
-  --destructive: 0 84% 45%;
-
+  --secondary: 220 15% 35%;
+  --secondary-foreground: 0 0% 90%;
+  --muted: 220 15% 30%;
+  --muted-foreground: 220 8% 70%;
+  --accent: var(--asl-secondary);
+  --accent-foreground: 0 0% 98%;
+  --destructive: var(--accent-red);
   --destructive-foreground: 0 0% 98%;
 
-  --input: 220 10% 35%;
-  --ring: 220 25% 35%;
-  --chart-1: 220 35% 65%;
-  --chart-2: 142 69% 58%;
-  --chart-3: 25 95% 65%;
-  --chart-4: 210 15% 75%;
-  --chart-5: 260 25% 75%;
+  --input: 220 15% 40%;
+  --ring: var(--asl-secondary);
+  --chart-1: var(--afc-primary);
+  --chart-2: var(--asl-secondary);
+  --chart-3: var(--accent-yellow);
+  --chart-4: var(--accent-red);
+  --chart-5: var(--accent-purple);
 
   --shadow-2xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.15);
   --shadow-xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.20);
@@ -212,6 +195,41 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+    line-height: var(--line-height-tight);
+    color: hsl(var(--premium-dark));
+  }
+
+  h1 {
+    @apply text-5xl md:text-7xl font-bold;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply text-3xl md:text-5xl font-semibold;
+    letter-spacing: -0.015em;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+
+  p {
+    line-height: var(--line-height-relaxed);
+    @apply text-muted-foreground;
+  }
+
+  /* Premium Focus States */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-offset-2;
+    ring-color: hsl(var(--afc-primary));
   }
 }
 
@@ -324,5 +342,97 @@
   .border.active-elevate-2:not(.no-active-interaction-elevate)::after,
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
+  }
+
+  /* Premium Animation Utilities */
+  .fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  .slide-up {
+    animation: slideUp 1s ease-out;
+  }
+
+  .scale-in {
+    animation: scaleIn 0.6s ease-out;
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Premium Button Styles */
+  .btn-premium {
+    @apply relative overflow-hidden transition-all duration-300;
+  }
+
+  .btn-premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+    transition: left 0.5s;
+  }
+
+  .btn-premium:hover::before {
+    left: 100%;
+  }
+
+  /* Industrial Premium Card */
+  .card-premium {
+    @apply bg-card/80 backdrop-blur-sm border border-card-border shadow-lg;
+    @apply hover:shadow-xl hover:bg-card/90 transition-all duration-300;
+  }
+
+  /* Premium Text Gradients */
+  .text-gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--afc-primary)), hsl(var(--asl-secondary)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-accent {
+    background: linear-gradient(135deg, hsl(var(--accent-red)), hsl(var(--accent-yellow)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
