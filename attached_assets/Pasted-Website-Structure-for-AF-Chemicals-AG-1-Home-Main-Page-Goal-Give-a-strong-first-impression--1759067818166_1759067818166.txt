@@ -1,0 +1,165 @@
+Website Structure for AF Chemicals AG
+1. Home (Main Page)
+
+👉 Goal: Give a strong first impression, communicate global scale, product innovation, and industries served.
+
+Sections:
+
+Hero Section
+
+Full-width background industrial image (steel/cement/chemical production).
+
+Headline: “Advanced Fluoride-Based Solutions for Global Industries”
+
+Subheadline: “Supplying sustainable, innovative, and cost-efficient chemical products worldwide.”
+
+CTA Buttons:
+
+“Explore Products”
+
+“Contact Us”
+
+About Us Snapshot
+
+Short intro (2–3 sentences).
+
+Visual map with plants & global reach (Europe, Latin America, Africa, Asia).
+
+Highlight “10+ years of expertise | 30+ countries | 4 continents”.
+
+Products Overview
+
+Icon-based bullet points:
+
+⚡ Powerful efficiency (50% less material needed)
+
+🔥 Lower melting point
+
+🛡️ Longer refractory lifespan
+
+🌍 Carbon-Free → Green Steel transition
+
+CTA: “Learn More About Our AF Series”
+
+Industries We Serve
+
+Grid with 4 industry blocks + icons/images:
+
+Carbon Steel
+
+Stainless Steel
+
+Abrasives
+
+Cement
+
+Global Reach & Logistics
+
+Section with world map + markers.
+
+Text: “Flexible, cost-effective solutions, active in 30+ countries.”
+
+Sustainability Highlight
+
+Infographic-style section (icons + short text):
+
+♻️ Circular economy
+
+🌱 Alternative to mining
+
+💧 Saves water & energy
+
+🌍 Lower CO₂ emissions
+
+Contact CTA
+
+Clean block with company address + contact email.
+
+Contact form: Name, Email, Message.
+
+2. Products & Industries We Serve
+
+👉 Goal: Showcase AF Series products and industries in detail.
+
+Intro Banner: “Innovative Fluoride-Based Products”
+
+AF Series Benefits (detailed) – comparison chart: AF Series vs Fluorspar.
+
+Industries Sections (scrolling or tabs):
+
+Carbon Steel Desulfurization
+
+Stainless Steel Desulfurization
+
+Abrasives
+
+Cement
+
+3. Logistics & Global Reach
+
+👉 Goal: Show operational strength and supply chain reliability.
+
+Map with production facilities (Europe, Latin America, Africa, Asia, India).
+
+Key Stats: Active in 30+ countries, 10+ years expertise.
+
+Text + visuals: “Adapting to local market needs with cost-effective solutions.”
+
+4. Sustainability
+
+👉 Goal: Position AF Chemicals as eco-conscious and innovative.
+
+Header: “Sustainability is in Our DNA”
+
+Infographic points (icons):
+
+Carbon-free products
+
+Recovered fluorine compounds
+
+Alternative to mining
+
+Energy & CO₂ savings
+
+Water & soil protection
+
+Case Example/Highlight: "Green Steel support with AF Series"
+
+5. Jobs & Careers
+
+👉 Goal: Attract talent.
+
+Banner: “Join Our Global Team”
+
+Intro: Highlight company culture, innovation, sustainability focus.
+
+Job Listings Section (filters for roles, locations).
+
+CTA: “Send CV to careers@afchemicals.com
+”
+
+6. Contact Page
+
+👉 Goal: Easy communication.
+
+Contact Form (Name, Email, Phone, Message).
+
+Head Office Info:
+
+Address: Promenadenstrasse 19, CH-8200 Schaffhausen, Switzerland
+
+Email: info@afchemicals.com
+
+Google Map Embed
+
+🎨 Visual & Style Guide
+
+Design style: Clean, industrial, professional (steel, cement, laboratory-inspired visuals).
+
+Colors: Dark blue/grey (trust + industrial), green (sustainability), white backgrounds for clarity.
+
+Typography: Sans-serif (modern, technical).
+
+Icons: Use simple line/solid icons for clarity (industries, sustainability, logistics).
+
+Avoid: Stocky template feel → instead, use custom visuals, bold typography, and infographics.
