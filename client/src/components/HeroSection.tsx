@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <section 
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-25 pb-25"
       data-testid="section-hero"
     >
       {/* Background Image with Overlay */}
